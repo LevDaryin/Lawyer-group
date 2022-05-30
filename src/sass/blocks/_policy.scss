@@ -1,0 +1,32 @@
+.policy {
+    color: #000000;
+    background: url(../img/noise_bg.png);
+    font-size: 14px;
+    line-height: 24px;
+    &__wrapper {
+        background-color: $main-color;
+        padding-bottom: 20px;
+    };
+    &__container {
+        padding: 40px 20px;
+        background-color: #FFFFFF;
+    };
+    &__list {
+        list-style-type: none;
+        padding-left: 30px;
+    };
+    &__sublist {
+        list-style-type: none;
+    };
+    &__header {
+        font-size: 22px;
+    };
+    &__subheader {
+        margin: 25px 0 25px 0;
+    };
+    &__tels {
+        a {
+            color: #000000;
+        };
+    };
+};

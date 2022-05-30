@@ -1,0 +1,52 @@
+@import 'libs/bootstrap-reboot.min.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+};
+
+.title {
+    position: relative;
+    color: #141414;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0px 0px 65px 0px;
+    &::after {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 163px;
+        background-color: #000;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10px;
+    };
+};
+
+@import 'base/variables.scss';
+@import 'blocks/header.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/services.scss';
+@import 'blocks/team.scss';
+@import 'blocks/price.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/form.scss';
+@import 'blocks/pageup.scss';
+@import 'blocks/modal.sass';
+@import 'blocks/policy.scss';
+@import 'blocks/media.scss';
+
+
+html {
+    scroll-behavior: smooth;
+}

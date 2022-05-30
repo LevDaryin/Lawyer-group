@@ -1,0 +1,207 @@
+@media (max-width: 1439px) {
+    .header {
+        &__logo {
+            margin: 20px 0 0 20px;
+            img {
+                width: 200px;
+                height: 58px;
+            };
+        };
+        &__navigation {
+            width: 500px;
+        };  
+        &__links {
+            font-size: 25px;
+        };
+        &__tels {
+            margin: 20px 20px 0 0;
+            width: 210px;
+        };
+        &__tel {
+            font-size: 24px;
+            line-height: 30px;
+        };  
+    };
+};
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    };
+    
+    .promo {
+        &__title {
+            font-size: 43px;
+            line-height: 50px;
+        };
+        &__subtitle {
+            font-size: 30px;
+        };
+    };
+    .team {
+        &__item {
+            &:nth-child(3) {
+                margin-top: 50px;
+            };
+        };
+    };
+};
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    };
+    .header {
+        &__navigation {
+            position: fixed;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			left: -100%;
+			width: 50%;
+			height: 100vh;
+			padding: 20px 15px;
+			background-color: rgba(0,0,0,.8);
+			transition: 0.6s all;
+			z-index: 2;
+			&_active {
+                left: 0
+            };
+        };	
+        &__links {
+            color: #fff;
+            padding: 16px 18px 16px 18px;
+            margin-bottom: 30px;
+        };
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 25%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            span {
+                display: block;
+                height: 4px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 4px;
+                transition: 0.5s all;
+            };
+            &_active {
+                span {
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    };	
+                    &:nth-child(2) {
+                        display: none;
+                    };
+                    &:nth-child(3) {
+                        transform: translateY(1px) rotate(45deg);
+                    };
+                };
+            };
+        };
+        &__logo {
+            margin: 72px 0 0 20px;
+        };
+        &__tels {
+            margin: 74px 20px 0 0;
+        };
+    };
+    .services {
+        &__item {
+            width: 298px;
+        };
+        &__list {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    };
+    .team {
+        &__item {
+            margin: 0 15px;
+        }
+    };
+    .price {
+        &__item {
+            width: 100%;
+        };
+    };
+};
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    };
+    .services {
+        &__wrapper {
+            flex-direction: column;
+            width: 298px;
+            margin: 0 auto;
+        };
+        &__item {
+            &:nth-child(2) {
+                margin-top: 50px;
+            };
+        };
+    };
+    .team {
+        &__item {
+            &:nth-child(2) {
+                margin-top: 50px;
+            };
+        };
+    };
+    .footer {
+        &__info {
+            width: 100%;
+        };
+    };
+};
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    };
+    .header {
+        &__wrapper {
+            position: absolute;
+            flex-direction: column;
+            right: 0;
+        };
+        &__logo {
+            width: 200px;
+        };
+        &__tels {
+            margin: 30px 20px 0 0;
+        };
+        .hamburger {
+            top: 30px;
+        };
+    };
+    .promo {
+        padding: 320px 0 220px 0;
+        &__title {
+            font-size: 27px;
+            line-height: 35px;
+        };
+        &__subtitle {
+            font-size: 22px;
+            line-height: 28px;
+        };
+    };
+    .footer {
+        &__tels {
+            width: 100%;
+            flex-direction: column;
+        };
+        &__tel {
+            line-height: 35px;
+        };
+    };
+};

@@ -1,0 +1,17 @@
+.promo {
+    padding: 375px 0 325px 0;
+    background: url(../img/bg.png) center (center/cover) no-repeat;
+    &__title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+    };
+    &__subtitle {
+        color: #fff;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        margin-top: 25px;
+    };
+};

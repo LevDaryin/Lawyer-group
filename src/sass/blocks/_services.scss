@@ -1,0 +1,35 @@
+.services {
+    padding: 20px 0px 100px 0px;
+    background: url(../img/noise_bg.png) center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    };
+    &__item {
+        display: block;
+        min-height: 438px;
+        width: 440px;
+        background-color: #fff;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+        padding: 16px 19px 32px 16px;
+        img {
+            display: block;
+            height: 52px;
+            width: 52px;
+            margin: 0 auto;
+            margin-bottom: 30px;            
+        };
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+        };
+    };
+    &__list {
+        color: #000;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        list-style-image:url(../icons/cube.svg);
+        padding-left: 34px;
+    };
+};
