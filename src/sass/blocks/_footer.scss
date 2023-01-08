@@ -1,0 +1,56 @@
+.footer {
+  position: relative;
+  height: 800px;
+  &__info {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-height: 283px;
+      width: 588px;
+      background: #DAD2B9;
+      box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      color: #000;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+  };
+  &__address {
+      margin-top: 25px;
+  };
+  &__tels {
+      margin: 25px auto 0 auto;
+      max-width: 451px;
+      display: flex;
+      justify-content: space-between;
+  };
+  &__tel {
+      color: #000;
+      &:hover {
+          color: #000;
+          text-decoration: none;
+      };
+  };
+  &__mail {
+      margin-top: 18px;
+      a {
+          color: #000;
+          &:hover {
+              color: #000;
+              text-decoration: none;
+          };
+      };
+  };
+  &__social {
+      margin-top: 25px;
+      img {
+          display: block;
+          height: 70px;
+          width: 70px;
+          margin: 25px auto;
+      };
+  };
+};

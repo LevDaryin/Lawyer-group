@@ -1,0 +1,45 @@
+.promo {
+	height: 100vh;
+	background: url(../img/bg.png) center (center/cover) no-repeat;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 15px;
+	&__title {
+		padding-top: 32vh;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 56px;
+	}
+	&__subtitle {
+		width: 520px;
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 38px;
+		margin-top: 5px;
+		margin: 0 auto;
+	}
+	&__description {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 38px;
+		margin-top: 20px;
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		a {
+			color: #FFFFFF;
+			text-decoration: none;
+		}
+		&-numbers {
+			display: flex;
+			flex-direction: column;
+			a {
+				margin-top: 5px;
+			}
+		}
+	}
+}

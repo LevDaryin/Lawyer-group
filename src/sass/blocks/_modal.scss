@@ -1,0 +1,37 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0,0,0,.56);
+  &__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 290px;
+    height: 240px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-top: 80px;
+    .close {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      span {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #000000;
+        &:nth-child(1) {
+          transform: translateY(4px) rotate(45deg);
+        }
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}

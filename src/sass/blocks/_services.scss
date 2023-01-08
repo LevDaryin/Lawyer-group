@@ -1,0 +1,45 @@
+.services {
+  background: #EBE6D7;
+  padding: 20px 0 100px 0;
+  &__wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 440px);
+    grid-template-rows: minmax(440px, auto);
+    column-gap: 100px;
+  }
+  &__item {
+    background-color: #FFFFFF;
+    max-width: 440px;
+    min-height: 440px;
+    padding: 10px 20px 20px 20px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+    img {
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+    }
+  }
+  &__points {
+    margin-top: 20px;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 36px;
+    li {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 10px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #DAD2B9;
+      }
+    }
+  }
+}

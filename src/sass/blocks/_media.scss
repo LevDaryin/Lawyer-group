@@ -1,0 +1,192 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  };
+  .navigation {
+    &__links {
+      width: 400px;
+    }
+  }
+  .services__wrapper {
+    column-gap: 50px;
+  }
+  .team__wrapper {
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+  .consultation__wrapper {
+    column-gap: 30px;
+  }
+};
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  };
+  .hamburger, .hamburger-wrapper {
+    display: block;
+  }
+  .navigation {
+  position: fixed;
+  transform: translateY(0);
+  left: -100%;
+  top: 0;
+  z-index: 2;
+  transition: all 0.5s;
+    &__links {
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      width: 200px;
+      a {
+        display: block;
+        margin-top: 50px;
+        padding: 0;
+        &:hover {
+          padding: 0;
+          background: rgba($color: #EBE6D7, $alpha: 0);
+        }
+      }
+    }
+    &_active {
+      left: 0;
+    }
+  }
+  .promo {
+    &__header {
+      margin-top: 35px;
+    }
+    &__title {
+      padding-top: 20vh;
+    }
+  }
+  .services__wrapper {
+    grid-template-columns: repeat(1, 440px);
+    grid-template-rows: repeat(2, minmax(440px, auto));
+    justify-content: center;
+    row-gap: 50px;
+  }
+  .services__item {
+    margin: 0 auto;
+  }
+  .team__wrapper {
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(3, 530px);
+  }
+  .consultation {
+    &__title {
+      text-align: center;
+    }
+    &__wrapper {
+      justify-content: center;
+      grid-template-columns: 345px;
+      grid-template-rows: minmax(400px, auto);
+    }
+  }
+};
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 26px;
+    &::after {
+      height: 4px;
+      width: 100px;
+      margin-top: 4px;
+  };
+  }
+  .container {
+    max-width: 540px;
+  };
+  .promo {
+    &__title {
+      font-size: 36px;
+    }
+    &__subtitle {
+      display: inline;
+      font-size: 20px;
+    }
+    &__description {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+  }
+  .team__wrapper {
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(6, 530px);
+  }
+  .footer {
+    &__info {
+      width: 320px;
+    }
+    &__tels {
+      flex-direction: column;
+      margin-top: 0;
+      a {
+        margin-top: 10px;
+      }
+    }
+  }
+};
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  };
+  .promo__header-logo {
+    display: none;
+  }
+  .promo {
+    &__header {
+      justify-content: end;
+    }
+    &__title {
+      line-height: 30px;
+      font-size: 26px;
+      margin-top: 0vh;
+    }
+    &__subtitle {
+      display: inline;
+      font-size: 17px;
+      line-height: 26px;
+    }
+    &__description {
+      font-size: 17px;
+      margin-top: 5px;
+      line-height: 26px;
+    }
+  }
+  .services {
+    &__item {
+      max-width: 300px;
+    }
+    &__points {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 10px;
+    }
+  }
+  .price__points {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .consultation {
+    &__wrapper {
+      grid-template-columns: 300px;
+    }
+    form {
+      .input, .textArea {
+        width: 300px;
+      }
+      .policy {
+        span {
+          line-height: 24px;
+          width: 300px;
+          display: block;
+        }
+      }
+    }
+  }
+};

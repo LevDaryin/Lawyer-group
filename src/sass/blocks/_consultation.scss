@@ -1,0 +1,93 @@
+.consultation {
+  min-height: 580px;
+  background: url(../img/form_bg.png) center (center/cover) no-repeat;
+  padding: 48px 0 60px 0;
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 345px 580px;
+    grid-template-rows: minmax(400px, auto);
+    column-gap: 190px;
+    row-gap: 40px;
+    margin-top: 30px;
+    align-items: center;
+  }
+  &__item {
+    min-height: 228px;
+    max-width: 580px;
+    background-color: #FFFFFF;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px 20px 20px;
+    ul {
+      list-style-type: none;
+      margin-top: 20px;
+      list-style-type: none;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      padding-left: 36px;
+    }
+    img {
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+    }  
+  }
+  form {
+    display: grid;
+    row-gap: 14px;
+    label {
+      font-size: 16px;
+      background-color: #FFFFFF;
+      border: 1px red solid;
+      color: rgb(150, 3, 3);
+      padding: 2px;
+    }
+    .input {
+      max-width: 345px;
+      height: 40px;
+      border: none;
+      padding: 10px;
+    }
+    .textArea {
+      max-width: 345px;
+      height: 200px;
+      border: none;
+      padding: 10px;
+      resize: none;
+    }
+    .policy {
+      label {
+        margin-top: 10px;
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+      input {
+        height: 16px;
+        width: 16px;
+        margin-left: 4px;
+      }
+    }
+    #submit-button {
+      max-width: 345px;
+      height: 50px;
+      background: #DAD2B9;
+      border: 3px solid #B7B3A6;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+}
+
+._error {
+  border: red 2px solid;
+}
